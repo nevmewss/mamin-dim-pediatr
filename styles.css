@@ -93,3 +93,41 @@
   .map:hover{transform:translateY(-3px);box-shadow:0 15px 34px rgba(20,55,80,.14)}
   .app-download>a:hover{transform:translateY(-2px);border-color:#7acbe5;box-shadow:0 10px 24px rgba(31,95,127,.12)}
 }
+
+/* Responsive carousel and final Figma alignment */
+.button{white-space:nowrap}
+.price-image>.price-icon{
+  left:17px;top:16px;width:106px;height:106px;z-index:3;
+  background:#fff;box-shadow:0 0 0 10px rgba(255,255,255,.96);
+  color:#16a9df;font-size:58px
+}
+.price-icon svg{width:1em;height:1em}
+.app-download>a{overflow:hidden;padding:0}
+.app-download>a img{display:block;width:146px;height:53px;object-fit:contain}
+.app-download>.qr{display:block;width:76px;height:76px;border:0;object-fit:contain;background:#fff}
+.mobile-slider-controls{display:none}
+
+@media(min-width:981px){
+  .app{height:1020px}
+  .app__surface{height:927px}
+  .faq-card{top:390px;height:350px;padding:26px 38px}
+  .faq-card ul{gap:9px}
+  .faq-card li{font-size:10.5px;line-height:1.35}
+  .faq-card li svg{flex:0 0 auto}
+}
+
+@media(max-width:980px){
+  .service-cards,.doctor-grid,.price-grid{
+    scrollbar-width:none;overscroll-behavior-inline:contain;scroll-behavior:smooth
+  }
+  .service-cards::-webkit-scrollbar,.doctor-grid::-webkit-scrollbar,.price-grid::-webkit-scrollbar{display:none}
+  .mobile-slider-controls.is-active{display:flex;align-items:center;justify-content:center;gap:14px;margin:4px 0 20px}
+  .mobile-slider-controls button{
+    width:42px;height:42px;border:1px solid #bfe9f7;border-radius:50%;background:#fff;
+    color:#19aee2;font-size:28px;line-height:1;cursor:pointer;box-shadow:0 5px 14px rgba(28,109,143,.1)
+  }
+  .mobile-slider-controls button:disabled{opacity:.3;cursor:default;box-shadow:none}
+  .slider-status{min-width:42px;text-align:center;color:#65738b;font-size:12px;font-weight:700}
+  .app-download>a{width:215px}
+  .app-download>.qr{width:76px;height:76px}
+}
