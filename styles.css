@@ -46,3 +46,50 @@
   .app__copy,.app__grid>*{min-width:0}
   .app__copy br{display:none}
 }
+
+/* Refinements from the final Figma comparison */
+@media(min-width:981px){
+  .service-card::before{
+    content:"";position:absolute;z-index:1;top:-19px;left:50%;width:88px;height:42px;
+    transform:translateX(-50%);background:#fff;border:1px solid var(--line);
+    border-bottom:0;border-radius:28px 28px 0 0;
+  }
+  .service-icon{z-index:2;top:-10px;box-shadow:none}
+
+  .process{border-top:0}
+  .process__grid{grid-template-columns:585px 1fr;gap:92px}
+  .timeline::before{left:-40px}
+  .timeline .num{left:-61px}
+
+  .doctor-grid article{height:380px;padding:10px}
+  .doctor-grid img{height:250px;border-radius:5px}
+  .doctor-grid h3{margin:17px 10px 6px}
+  .doctor-grid a{width:calc(100% - 34px)}
+
+  .pricing{height:900px}
+
+  .booking-form label{display:block;padding-left:76px;min-height:88px}
+  .booking-form label>b{display:block;margin:0 0 7px}
+  .booking-form input,.booking-form select{display:block;width:100%}
+  .form-icon{left:0;top:3px}
+
+  .app__grid{grid-template-columns:630px 1fr;gap:10px}
+  .app__phone{justify-content:flex-end}
+  .app__phone img{width:680px;height:700px;max-width:none}
+
+  .faq__grid{grid-template-columns:650px 1fr}
+  .faq-card{left:70px;top:410px}
+
+  .contacts{height:900px;padding-top:80px}
+}
+
+@media(hover:hover){
+  a,button,summary,.service-card,.doctor-grid article,.price-card{transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease,color .22s ease,filter .22s ease,border-color .22s ease}
+  .button:hover,.wide-cta .button:hover,.process-cta .button:hover,.faq-cta>a:hover,.availability-card a:hover,.booking-form button:hover,.contacts button:hover,.price-body a:hover,.doctor-grid a:hover{transform:translateY(-2px);filter:brightness(1.04);box-shadow:0 10px 24px rgba(14,115,157,.18)}
+  .service-card:hover,.doctor-grid article:hover,.price-card:hover{transform:translateY(-6px);box-shadow:0 18px 38px rgba(31,95,127,.14);border-color:#9edff2}
+  .service-card>a:hover{background:var(--blue);color:#fff}
+  .accordion summary:hover{background:#f0faff}
+  .reviews__head>a:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(0,0,0,.12)}
+  .map:hover{transform:translateY(-3px);box-shadow:0 15px 34px rgba(20,55,80,.14)}
+  .app-download>a:hover{transform:translateY(-2px);border-color:#7acbe5;box-shadow:0 10px 24px rgba(31,95,127,.12)}
+}
