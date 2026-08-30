@@ -1,0 +1,5 @@
+config.php
+storage/*.csv
+.DS_Store
+Thumbs.db
+
