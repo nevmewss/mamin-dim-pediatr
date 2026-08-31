@@ -131,3 +131,30 @@
   .app-download>a{width:215px}
   .app-download>.qr{width:76px;height:76px}
 }
+
+/* Clean store links and slider controls */
+.app-download>a{
+  width:146px;height:53px;border:0;border-radius:10px;background:transparent;
+  box-shadow:none;flex:0 0 146px
+}
+.app-download>a img{width:146px;height:53px}
+.slider-status{
+  position:absolute!important;width:1px!important;height:1px!important;padding:0!important;
+  margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important
+}
+.mobile-slider-controls button{font-family:Arial,sans-serif;font-weight:400}
+
+@media(max-width:600px){
+  .app-download>a{width:146px;flex-basis:146px;margin-inline:auto}
+}
+
+/* Interactive map and expanded FAQ spacing */
+.map{border-color:#dcecf3;background:#eef8fd}
+.map iframe{display:block;width:100%;height:100%;border:0}
+.accordion details[open] summary{height:64px;padding-top:8px}
+.accordion details[open] p{padding:5px 66px 24px;line-height:1.75}
+
+@media(max-width:600px){
+  .accordion details[open] summary{height:auto;min-height:64px;padding:12px 14px}
+  .accordion details[open] p{padding:4px 18px 22px 62px}
+}

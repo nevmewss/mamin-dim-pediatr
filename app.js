@@ -20,9 +20,9 @@ document.querySelectorAll('.service-cards, .doctor-grid, .price-grid').forEach((
   const controls = document.createElement('div');
   controls.className = 'mobile-slider-controls';
   controls.innerHTML = `
-    <button class="slider-prev" type="button" aria-label="Попередній слайд">‹</button>
+    <button class="slider-prev" type="button" aria-label="Попередній слайд">←</button>
     <span class="slider-status" aria-live="polite"></span>
-    <button class="slider-next" type="button" aria-label="Наступний слайд">›</button>
+    <button class="slider-next" type="button" aria-label="Наступний слайд">→</button>
   `;
   track.after(controls);
 
