@@ -158,3 +158,24 @@
   .accordion details[open] summary{height:auto;min-height:64px;padding:12px 14px}
   .accordion details[open] p{padding:4px 18px 22px 62px}
 }
+
+/* Reviews, direct form anchor and mobile alignment */
+.review-grid img{
+  object-fit:contain;object-position:center;background:#fff;border:1px solid #e5edf2;border-radius:12px
+}
+.booking-form{scroll-margin-top:20px}
+.contacts button{background:#20ace0}
+
+@media(max-width:600px){
+  .contacts form{width:100%;max-width:520px;margin-inline:auto;text-align:center}
+  .contacts form label{text-align:left}
+  .contacts label.consent{justify-content:center}
+  .contacts button{display:block;width:min(100%,220px);margin-inline:auto}
+
+  .footer{text-align:center}
+  .footer__grid{justify-items:center}
+  .footer__grid>div,.footer nav{width:100%}
+  .footer nav{justify-items:center}
+  .social{display:flex;justify-content:center}
+  .footer__bottom{align-items:center;text-align:center}
+}
